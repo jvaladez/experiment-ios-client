@@ -6,10 +6,9 @@ import PackageDescription
 let package = Package(
     name: "experiment-ios-client",
     platforms: [
-        .iOS(.v10),
-        .macOS(.v10_10),
-        .tvOS(.v9),
-        .watchOS(.v3)
+        .iOS(.v14),
+        .tvOS(.v14),
+        .watchOS(.v7)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -19,7 +18,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/amplitude/analytics-connector-ios.git", from: "1.0.0")
+        .package(url: "https://github.com/jvaladez/analytics-connector-ios.git")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
